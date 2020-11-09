@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form2</title>
+    <style>
+        .reqire{
+        
+              color: red; 
+              
+        }
+        .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  
+
+}
+.multi{
+    padding-right: 20px;
+}
+        
+    </style>
 </head>
 <body>
-    <label> Company: <input type= " text " name= " Company "> </label>
-    <label> Firstname: <input type= " text " name= " Firstname"> </label>
-    <label> Lastname: <input type= " text " name= " Lastname"> </label>
-    <label> Email address: <input type= " text " name= " Email address "> </label>
-    <label> Title : <input type= " text " name= " Title "> </label>
-    <label> Phone : <input type= " text " name= " Phone "> </label>
+     <label> <span class="reqire">&#42;</span>Company: <input type= " text " name= " Company "> </label><br>
+       <label> <span class="reqire">&#42;</span>Firstname: <input type= " text " name= " Firstname"> </label><br>
+     <label><span class="reqire">&#42;</span> Lastname: <input type= " text " name= " Lastname"> </label><br>
+     <label> <span class="reqire">&#42;</span>Email address: <input type= " text " name= " Email address "> </label><br>
+    <label><span class="reqire">&#42;</span> Title : <input type= " text " name= " Title "> </label><br>
+    <label> <span class="reqire">&#42;</span>Phone : <input type= " text " name= " Phone "> </label>
+    <label class="container">cancel registration: <input type="checkbox"></label>
+      <label for="date"><span class="reqire">&#42;</span>252 training session<input type="date"  value="Select-date"></label><br>
+     
+      <label> <span class="reqire">&#42;</span>job description</label>
+      <label><input type="radio" name="name">campaign management </label><br>
+  
+  <label><span class="reqire"></span><input type="radio"name="name">CRM Administration</label><br>
+  
+  <label><span class="reqire"></span><input type="radio"name="name">Email Deloyment</label><br>
+  <label><span class="reqire"></span><input type="radio"name="name">Partner</label><br>
+  <label><span class="reqire"></span><input type="radio"name="name">Empolyee</label><br>
+ 
+  <label> Dietary requirement: <input type= " text " name= "name "> </label><br>
+  
+  <label><p>expectations?</p><textarea name="contest_entry" rows="5" cols="50"></textarea> </label><br>
+  <input type="submit" value="Submit">
 </body>
 </html>
