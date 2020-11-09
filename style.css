@@ -2,3 +2,27 @@
     font-size: 1.5em;
 
 }
+.f2{
+    text-transform: capitalize;
+}
+.f3{
+    text-align: right;
+}
+.f4{
+    font-family: Verdana; font-size: 1.5em;
+}
+.f5{
+    letter-spacing: 3px;
+}
+.f6{
+    font: bold italic 1.2em Verdana;
+}
+.f7{
+    text-transform: uppercase;
+}
+.f8{
+    text-indent: 2em;
+}
+.f9{
+    font-variant: small-caps;
+}
