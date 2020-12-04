@@ -1,3 +1,9 @@
 body {
-    background-image: url(graphic.gif);
-   }
+    background-image: url(images.jfif);
+    text-align: center;
+    padding-top: 20%;
+}
+.a{
+    height: 70px;
+ border-style: solid; 
+}

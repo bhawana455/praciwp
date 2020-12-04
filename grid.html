@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+     * {
+       box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 50%;
+     padding: 10px;
+     display: grid;
+}
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column" style="background-color:rgb(212, 22, 180);">
+          <h2>Column 1</h2>
+         <ul>
+             <p>When the browser goes about sizing a flex item, it consults the flex-basis
+                value, compares it to the available space along the axis, and then adds or
+                removes space from items according to their grow and shrink settings. It’s
+                important to note that if you allow an item to grow or shrink, it could end
+                up being narrower or wider than the length provided by flex-basis or width.</p>
+         </ul>
+        </div>
+        <div class="column" style="background-color:rgb(240, 236, 21);">
+          <h2>Column 2</h2>
+          <ul><p>The advantage to using the flex property is that there are some handy
+            shortcut values that cover typical Flexbox scenarios. Curiously, some of the
+            shortcut values override the defaults of the individual properties, which was
+            confusing to me at first, but in the end it results in more predictable behaviors.In this example, the flex basis for the boxes is set to 100 pixels because the
+            auto value uses the value set by width</p></ul>
+        </div>
+      </div>
+</body>
+</html>

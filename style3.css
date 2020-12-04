@@ -1,0 +1,11 @@
+body {
+    background-image: url(images.jfif);
+    background-repeat: repeat-x;
+    padding-top: 10%;
+   
+   
+   }
+   .a{
+       height: 70px;
+    border-style: solid; 
+   }
