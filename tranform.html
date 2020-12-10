@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tranform</title>
+    <style>
+.smooth {
+ display: block;
+ text-decoration:none;
+ text-align: center;
+ padding: 1em 2em;
+ width: 10em;
+ border-radius: 1.5em;
+ color: #fff;
+ background-color: mediumblue;
+ transition-property: background-color;
+ transition-duration: .3s;
+ transition-timing-function: ease-in-out;
+ transition: width 2s;
+  transition-timing-function: linear;
+}
+.smooth:hover, .smooth:focus {
+ background-color: red;
+ width: 18em;
+}
+img:hover{
+ padding-top: 10px;
+  transform: scaleX(-1);
+}
+img{
+    padding-top:10px ;
+}
+
+    </style>
+</head>
+<body>
+    <a href="…" class="smooth">awesomesauce</a>
+        <img src="rose.jfif" alt="Paris" style="width:300px;height:200px">
+      
+</body>
+</html>
