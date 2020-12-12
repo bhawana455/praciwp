@@ -34,9 +34,5 @@ int main()
              send(newSocket,buffer,nBytes,0);
         }
         
-          exit(0);
-          close(newSocket); 
     }
-    return 0;
-    
 }
