@@ -12,6 +12,9 @@ int main(int argc,char**argv)
  serv_addr.sin_addr.s_addr=INADDR_ANY;
  serv_addr.sin_port=htons(SERV_TCP_PORT);
  bind(sockfd,(struct sockaddr*)&serv_addr,sizeof(serv_addr));
+ printf("Bhawana Priyadarshini\n");
+ printf("1841017103\n");
+ printf("CSIT D");
  printf("\nServer is Listening..");
  printf("\n");
  listen(sockfd,5);

@@ -11,6 +11,9 @@ int main(int argc,char **argv){
 int sockfd,clientfd,port,int_to_receive,int_to_send,two_x,x_sq,sum;
 struct sockaddr_in s_addr,c_addr;
 char buffer[MAXBUF];
+printf("bhawana\n");
+printf("CSIT\n");
+printf("1841017103\n");
 socklen_t socklen=(socklen_t)sizeof(struct sockaddr_in);
 if(argc<2)
 {
@@ -22,7 +25,7 @@ if(sockfd ==-1){
 printf("socket creation failed");
 exit(errno);
 }
-printf("socket successfully\n");
+printf("socket successfully created\n");
 bzero(&s_addr,sizeof(s_addr));
 s_addr.sin_family=AF_INET;
 port=atoi(argv[1]);
@@ -37,15 +40,15 @@ if(listen(sockfd,QUEUE_NO)!=0){
     exit(errno);
 }
 clientfd=accept(sockfd,(struct sockaddr*)&c_addr,&socklen);
-printf("%s : %d connected",inet_ntoa(c_addr.sin_addr),ntohs(c_addr.sin_port));
+printf("%s : %d connected\n",inet_ntoa(c_addr.sin_addr),ntohs(c_addr.sin_port));
 read(clientfd,&int_to_receive,sizeof(int_to_receive));
-printf("recieved from client:%d\n",int_to_receive);
+printf("recieved from client: %d\n",int_to_receive);
 x_sq=int_to_receive*int_to_receive;
 two_x=2*int_to_receive;
 write(clientfd,&two_x,sizeof(two_x));
-write(clientfd,x_sq,sizeof(x_sq));
+write(clientfd,&x_sq,sizeof(x_sq));
 read(clientfd,&sum,sizeof(sum));
-printf("sumof x2 and 2x recieved from client=%d\n",sum);
+printf("sumof x2 and 2x recieved from client= %d\n",sum);
 close(clientfd);
 close(sockfd);
 return 0;

@@ -14,6 +14,9 @@ int main(int argc,char*argv[])
         serv_addr.sin_family=AF_INET;
         serv_addr.sin_addr.s_addr=inet_addr("127.0.0.1");
         serv_addr.sin_port=htons(SERV_TCP_PORT);
+        printf("Bhawana Priyadarshini\n");
+        printf("1841017103\n");
+        printf("CSIT D");
         printf("\nReady for sending");
         connect(sockfd,(struct sockaddr*)&serv_addr,sizeof(serv_addr));
         printf("\nenter the message to send\n");                                                                           

@@ -21,6 +21,9 @@ int main(int argc , char *argv[])
  struct sockaddr_in serv_addr , cli_addr;
  socklen_t clilen;
  sockfd = socket(AF_INET,SOCK_STREAM,0);
+ printf("Bhawana Priyadarshini\n");
+ printf("1841017103\n");
+printf("CSIT D\n");
  if (sockfd<0)
  {
  error("error opening socket");

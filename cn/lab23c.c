@@ -7,6 +7,9 @@
 #include<errno.h>
 void send_recieve_integer_over_socket(int sockfd){
     int int_to_send,sum,x_sq,two_x;
+    printf("bhawana\n");
+    printf("CSIT\n");
+    printf("1841017103\n");
     printf("enter the integer value\n");
     scanf("%d",&int_to_send);
     write(sockfd,&int_to_send,sizeof(int_to_send));

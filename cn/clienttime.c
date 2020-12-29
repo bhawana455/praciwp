@@ -19,6 +19,9 @@ int main(int argc, char **argv){
  serverAddress.sin_addr.s_addr = INADDR_ANY;
  serverAddress.sin_port = htons(port);
  connect(sockfd, (struct sockaddr*)&serverAddress, sizeof(serverAddress));
+  printf("Bhawana Priyadarshini\n");
+  printf("1841017103\n");
+  printf("CSIT D");
  printf("Connected to the server\n");
  recv(sockfd, response, 29, 0);
  printf("Time from server: %s", response);

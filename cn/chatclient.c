@@ -17,6 +17,9 @@ int main ( int argc , char *argv[] )
  struct sockaddr_in serv_addr;
  struct hostent *server;
  char buffer[256];
+  printf("Bhawana Priyadarshini\n");
+printf("1841017103\n");
+printf("CSIT D\n");
  if(argc < 3){
  fprintf(stderr,"Usage %s hostname port\n",argv[0]);
  exit(1);
